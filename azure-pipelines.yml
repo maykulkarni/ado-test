@@ -10,10 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python35:
-      python.version: '3.5'
-    Python36:
-      python.version: '3.6'
     Python37:
       python.version: '3.7'
 
@@ -46,8 +42,8 @@ steps:
 
   displayName: 'Building wheel'
 - task: TwineAuthenticate@1
+- task: TwineAuthenticate@1
   inputs:
-    artifactFeed: 'SVTFeed'
+    artifactFeed: 'SVTNuget'
     pythonUploadServiceConnection: 'maykulkarni-pypi'
-
 - script: 'twine upload -r "maykulkarni-pypi" --config-file $(PYPIRC_PATH) dist/*.whl'
