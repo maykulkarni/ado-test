@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-		name="Hello",
+		name="HelloIAMMayur",
 		version=1.0,
 		description="Foo Bar",
 		author="AzSK Dev Team",
