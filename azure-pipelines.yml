@@ -38,3 +38,8 @@ steps:
     scanType: 'Register'
     verbosity: 'Verbose'
     alertWarningLevel: 'High'
+
+- task: TwineAuthenticate@1
+  inputs:
+    artifactFeed: 'SVTFeed'
+    pythonUploadServiceConnection: 'maykulkarni-pypi'
