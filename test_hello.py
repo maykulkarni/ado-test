@@ -1,5 +1,5 @@
 import pytest
 
 
-test_hello():
+def test_hello():
 	assert True == True
