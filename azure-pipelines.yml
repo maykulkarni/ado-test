@@ -46,7 +46,3 @@ steps:
     artifactFeed: 'SVTNuget'
     pythonUploadServiceConnection: 'maykulkarni-pypi'
 - script: 'twine upload -r "maykulkarni" --config-file $(PYPIRC_PATH) dist/*.whl'
-- task: TwineAuthenticate@1
-  inputs:
-    artifactFeed: 'SVTNuget'
-    pythonUploadServiceConnection: 'maykulkarni'
