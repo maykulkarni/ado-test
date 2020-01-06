@@ -1,9 +1,8 @@
 import setuptools
-from azskpy.constants import __name__, __version__
 
 setuptools.setup(
-		name=__name__,
-		version=__version__,
+		name="Hello",
+		version=1.0,
 		description="Foo Bar",
 		author="AzSK Dev Team",
 		author_email="mayurk",
