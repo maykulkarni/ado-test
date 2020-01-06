@@ -45,4 +45,4 @@ steps:
   inputs:
     artifactFeed: 'SVTNuget'
     pythonUploadServiceConnection: 'pypimaykulkarni'
-- script: 'twine upload -r "pypimaykulkarni" --config-file $(PYPIRC_PATH) dist/*.whl'
+- script: 'twine upload -r "maytest" --config-file $(PYPIRC_PATH) dist/*.whl'
