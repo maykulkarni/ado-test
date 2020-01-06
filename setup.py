@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
 		name="HelloIAMMayur",
-		version=1.0,
+		version=1.2,
 		description="Foo Bar",
 		author="AzSK Dev Team",
 		author_email="mayurkulkarni012@gmail.com",
