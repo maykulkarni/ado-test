@@ -8,6 +8,11 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+    addToPath: true
+    architecture: 'x64'
 strategy:
   matrix:
     Python37:
@@ -41,7 +46,6 @@ steps:
     python setup.py sdist bdist_wheel
 
   displayName: 'Building wheel'
-- task: TwineAuthenticate@1
 - task: TwineAuthenticate@1
   inputs:
     artifactFeed: 'SVTNuget'
